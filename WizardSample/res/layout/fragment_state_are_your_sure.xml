@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/choiceGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="2dip" >
+
+        <RadioButton
+            android:id="@+id/yes"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/no"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="No" />
+        
+    </RadioGroup>
+
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="This state demonstrates the ability to make a choice of for the next state based on user entry. Choosing Yes will move you forward based on the answer given to last state&apos;s choice. Choosing no will send you to the opposite state.\r\n\r\nIt&apos;s also a generic state in that the arguments are used to initialize the text above the Yes/No radio buttons."
+        android:textSize="24sp" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+    
+    <TextView
+        android:id="@+id/textView"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <include layout="@layout/divider_line" />
+    
+    <TextView
+        android:id="@+id/descriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="The only thing fancy about this state is that it reads one of the arguments sent in the original call to WizardActivity#startWizard(). Other than that it's a simple screen that only allows forward movement. \r\n\r\nNote that since this is the first screen in the wizard, pressing the back button on the device will exit the wizard entirely and let the originating activity know that the user cancelled out."
+        android:textSize="24sp" />
+
+</LinearLayout>

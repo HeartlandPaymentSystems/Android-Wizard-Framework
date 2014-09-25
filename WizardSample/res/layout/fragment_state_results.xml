@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <include layout="@layout/divider_line" />
+    
+    <TextView
+        android:id="@+id/descriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="This is the last step in the wizard. It gathers the choices made in prior steps and displays them to the user. While this isn't necessary, it can be useful to wrap things up at the end of a long wizard, and maybe even give the user the choice to start over or go back, in case they made a mistake or changed their minds.\r\n\r\nBecause this is the last state, the next button becomes a finish button. Pressing it will close this wizard and send RESULT_OK back to the originating activity. The framework makes a call to getFinalResult() in order to get the data it will pass back to the originator. In the case of this quiz, it sends back the score."
+        android:textSize="24sp" />
+
+</LinearLayout>

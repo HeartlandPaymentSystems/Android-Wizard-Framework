@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+
+    <TextView
+        android:id="@+id/wizard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which thing did the Cat bring?" />
+
+    <RadioGroup
+        android:id="@+id/things"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="2dip" >
+
+        <RadioButton
+            android:id="@+id/benGrimm"
+            style="@style/RadioButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Ben Grimm" />
+
+        <RadioButton
+            android:id="@+id/gThang"
+            style="@style/RadioButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="A G Thang, Baby" />
+
+        <RadioButton
+            android:id="@+id/thing1"
+            style="@style/RadioButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Thing 1" />
+
+        <RadioButton
+            android:id="@+id/thing2"
+            style="@style/RadioButtonStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Thing 2" />
+    </RadioGroup>
+
+    <include layout="@layout/divider_line" />
+
+    <TextView
+        android:id="@+id/descriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="This state asks a question and doesn&apos;t allow forward movement until that question is answered.\r\n\r\nIt also responds to onForward() and onBack() to store or clear the answers respectively."
+        android:textSize="24sp" />
+
+</LinearLayout>

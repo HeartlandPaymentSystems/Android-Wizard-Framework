@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+
+    <TextView
+        android:id="@+id/wizard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which character was played by both Jim Hensen and Frank Oz simultaneously?" />
+
+    <RadioGroup
+        android:id="@+id/choiceGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="2dip" >
+
+        <RadioButton
+            android:id="@+id/gonzo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="Gonzo" />
+
+        <RadioButton
+            android:id="@+id/animal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="Animal" />
+        
+        <RadioButton
+            android:id="@+id/piggy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="Miss Piggy" />
+
+        <RadioButton
+            android:id="@+id/chef"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="The Swedish Chef" />
+
+    </RadioGroup>
+
+    <include layout="@layout/divider_line" />
+    
+    <TextView
+        android:id="@+id/descriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Apart from having been shown because of previous choices, this state is basically just a different version of the Dr. Seuss question at the start."
+        android:textSize="24sp" />
+
+    
+</LinearLayout>

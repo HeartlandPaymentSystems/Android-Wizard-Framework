@@ -1,0 +1,26 @@
+<resources>
+
+    <string name="app_name">Wizard Sample</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="nice_html_instructions">
+	<![CDATA[
+	<p>What follows is an example for the WizardFramework library. It goes through a brief quiz on children\'s entertainment to demonstrate styling, state transitions, and other aspects of using the wizard generator.</p>
+	
+	<p>Should you happen to be a developer the code for this project contains commented examples of how to use the framework to build a wizard.<p>
+	]]>
+	</string>
+	
+    <string name="background_validation_instructions">
+	<![CDATA[
+    <p>This state demonstrates how to do background validations.</p>
+    <ul>
+		<li>Click the button to enable the next button.</li>
+    	<li>Slide the slider to determine how long you want the process to take.</li>
+    	<li>Check the box if you want validation to succeed and jump to the next step.</li>
+    </ul>
+	]]>
+	</string>
+    
+
+</resources>

@@ -1,0 +1,9 @@
+<resources>
+
+    <!-- These styles are here to override those found in the WizardFramework library (see WizardFramework/res/values/styles.xml). -->
+    
+    <style name="wizardButtonStyle" parent="style/ButtonAppTheme">
+        <item name="android:textSize">@dimen/wizardButtonTextSize</item>
+    </style>
+
+</resources>

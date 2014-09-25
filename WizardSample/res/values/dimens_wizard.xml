@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- These dimensions are here to override those found in the WizardFramework library (see WizardFramework/res/values/dimens.xml and styles.xml). -->
+	<dimen name="titleTextSize">24sp</dimen>
+	
+</resources>

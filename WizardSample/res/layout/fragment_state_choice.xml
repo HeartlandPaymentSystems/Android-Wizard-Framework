@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".WizardActivity" >
+
+    <TextView
+        android:id="@+id/wizard_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Which one is the best show?\r\n\r\n Future states depend on your choice here." />
+
+    <RadioGroup
+        android:id="@+id/choiceGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="2dip" >
+
+        <RadioButton
+            android:id="@+id/sesameStreet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="Sesame Street" />
+
+        <RadioButton
+            android:id="@+id/muppets"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/RadioButtonStyle"
+            android:text="The Muppet Show" />
+        
+    </RadioGroup>
+
+    <include layout="@layout/divider_line" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:src="@drawable/sesame_street_vs_muppet_show" />
+    
+    <TextView
+        android:id="@+id/descriptiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="This state demonstrates the ability to pass data to future states based on user interaction. Your choice here will be reflected in the following step.\r\n\r\nIn addition it shows validation. While the next button can be enabled by selecting a radio button, you can't actually move forward until you've clicked the neutral button at least once.don't believe me? Try it!\r\n\r\nFinally, it shows how to handle clicks on the neutral button by responding to onNeutralButtonClicked().\r\n\r\nWow, that was a busy step."
+        android:textSize="24sp" />
+
+</LinearLayout>
