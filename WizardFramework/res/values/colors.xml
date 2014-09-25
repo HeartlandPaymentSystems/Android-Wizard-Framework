@@ -1,0 +1,6 @@
+<resources>
+
+    <!-- Default text color for wizard buttons is blue. -->
+    <color name="wizardButtonTextColor">#0000FF</color>
+
+</resources>

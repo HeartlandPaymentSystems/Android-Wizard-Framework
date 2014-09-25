@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tim</string>
+
+    <!-- Button labels -->
+    <string name="wizard_next">Next</string>
+    <string name="wizard_finish">Finish</string>
+    <string name="wizard_previous">Back</string>
+    <string name="wizard_neutral">Neutral</string>
+
+</resources>

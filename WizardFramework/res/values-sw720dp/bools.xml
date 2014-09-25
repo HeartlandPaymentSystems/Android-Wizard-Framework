@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 
+    	Flag that indicates whether we're on a small screen or not. This affects how dialogs are laid out.
+    -->
+    <bool name="small_screen">false</bool>
+</resources>

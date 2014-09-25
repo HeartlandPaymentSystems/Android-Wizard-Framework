@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dialog_margin"
+    tools:context=".WizardDialog" >
+
+    <LinearLayout
+        android:id="@+id/wizard_title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/wizard_step_count"
+            style="@style/wizardTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/wizard_title"
+            style="@style/wizardTitleStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    
+    <!-- Layout for wizard controls -->
+    <LinearLayout
+        android:id="@+id/wizard_button_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wizard_previous_button"
+            style="@style/wizardPreviousButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:enabled="false"
+            android:text="@string/wizard_previous" />
+
+        <Button
+            android:id="@+id/wizard_neutral_button"
+            style="@style/wizardNeutralButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wizard_neutral" />
+
+        <Button
+            android:id="@+id/wizard_next_button"
+            style="@style/wizardNextButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wizard_next" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/wizard_button_bar"
+        android:layout_below="@+id/wizard_title_bar" >
+
+        <FrameLayout
+            android:id="@+id/wizard_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

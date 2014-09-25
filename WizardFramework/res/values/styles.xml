@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Style for the title atop each StateFragment. -->
+    <style name="wizardTitleStyle">
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:layout_marginRight">@dimen/titleTextMarginRight</item>
+    </style>
+
+    <!-- The default style for the next, previous, and neutral buttons. -->
+    <style name="wizardButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:textSize">@dimen/buttonTextSize</item>
+        <item name="android:textColor">@color/wizardButtonTextColor</item>
+    </style>
+
+    <!-- By default these use the same style, but they're separated so the using project can change them if desired. -->
+    <style name="wizardPreviousButtonStyle" parent="wizardButtonStyle"></style>
+    <style name="wizardNeutralButtonStyle" parent="wizardButtonStyle"></style>
+    <style name="wizardNextButtonStyle" parent="wizardButtonStyle"></style>
+
+</resources>

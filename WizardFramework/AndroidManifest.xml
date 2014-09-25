@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hps.wizard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <!-- 
+        	These are the entries for the activities used to display the wizard. If you use these classes, these entries must appear in your project's manifest. 
+        	They don't have to be copied verbatim and you can supply your own themes, labels, etc.  
+        -->
+        
+        <!-- 
+        	The activity used when the wizard is displayed full screen.
+        -->
+        <activity
+            android:name="com.hps.wizard.WizardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <!-- 
+        	The activity used when the wizard is displayed as a dialog. If you change the theme it should still be one that uses one of Android's dialog themes
+        	as its parent or strange visual oddities may occur, such as titles being unavailable.
+        -->
+        <activity
+            android:name="com.hps.wizard.WizardDialog"
+            android:theme="@android:style/Theme.Dialog"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>

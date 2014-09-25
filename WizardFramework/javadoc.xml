@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="javadoc" >
+
+    <target name="javadoc" >
+
+        <property environment="env" />
+
+        <javadoc
+            access="protected"
+            author="true"
+            classpath="${env.ANDROID_HOME}\platforms\android-19\android.jar;libs/android-support-v4.jar"
+            destdir="doc"
+            doctitle="&lt;a href=&apos;http://uncyclopedia.wikia.com/wiki/Tim_the_Enchanter&apos; target=&apos;_blank&apos;>Tim&lt;/a> - The Wizard Framework"
+            nodeprecated="false"
+            nodeprecatedlist="false"
+            noindex="false"
+            nonavbar="false"
+            notree="false"
+            packagenames="com.hps.wizard"
+            source="1.6"
+            sourcepath="gen;src"
+            splitindex="true"
+            stylesheetfile="stylesheet.css"
+            use="true"
+            version="true" >
+
+            <link href="file:/C:/mobuyle/svn/WizardFramework/doc/" />
+
+            <link
+                href="http://developer.android.com/reference/"
+                offline="true"
+                packagelistloc="${env.ANDROID_HOME}\docs\reference" />
+        </javadoc>
+    </target>
+
+</project>
